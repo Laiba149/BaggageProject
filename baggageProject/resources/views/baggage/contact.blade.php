@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+        integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+</head>
+
+<body>
+    <div style="background-color: rgb(121, 218, 243); font-size: small;">
+        <div class="container d-flex">
+            <div style="padding: 20px 30px; margin-left: 50px;">
+                <h1>
+                    <b style="color: #ffffff;">B</b><span
+                        style="font-weight:1000px; font-size: 30px; font-weight:lighter;">aggage</span>
+                </h1>
+                <label for="" style="font-size: smaller; letter-spacing: 2px; color: grey;"><b>ONLINE STORE</b></label>
+
+            </div>
+            <div style="text-align:right; font-size: 15px; text-decoration:none; margin-left: 60%;margin-top: 40px; ">
+                <a href=""><i class="fa-regular fa-circle-user" style="color: #ffffff;"></i> <span
+                        style="color:black; text-decoration: none;">Sign in</span></a>
+                <a href=""><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i> <span
+                        style="color: black">Sign up</span></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg a" style="letter-spacing: 2px; font-weight: 600;">
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color: #d33c3c;">HOME</a><br>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DROPDOWN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">SERVICES</a></li>
+                                <li><a class="dropdown-item" href="#">FEATURES</a></li>
+                                <li><a class="dropdown-item" href="#">SINGLE PAGE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collection.html">COLLECTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search here..."
+                            aria-label="Search" />
+                        <button class="btn btn-outline bg-danger" type="submit"><i class="fa-solid fa-magnifying-glass"
+                                style="color: #ffffff;"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h3 style="padding: 30px 30px; text-align: center;">CONTACT US</h3>
+        <div class="row">
+            <div class="col-lg-6" style="border: 2px solid #f7f7f7;">
+                <div
+                    style="color: #888;font-size: 16px; font-weight: 300;  letter-spacing: 1px; border: none; width: 100%; margin-bottom: 20px;padding: 15px 20px; ">
+                    <input type="text" name="name" placeholder="User Name" id
+                        style="width: 100%; border: none; background-color: #888; background: rgba(0, 123, 255, 0.06);padding: 15px 20px;">
+                </div>
+                <div
+                    style="color: #888;font-size: 16px; font-weight: 300; color: #888; letter-spacing: 1px; border: none;  width: 100%;  ;margin-bottom: 20px; padding: 15px 20px; ">
+                    <input type="text" name="email" placeholder="User Email"
+                        style="width: 100%; border: none; background-color: #888; background: rgba(0, 123, 255, 0.06);padding: 15px 20px;">
+                </div>
+                <div
+                    style="color: #888;font-size: 16px; font-weight: 300; color: #888; letter-spacing: 1px; border: none;  width: 100%;  margin-bottom: 20px; padding: 15px 20px; ">
+                    <input type="number" name="phone" placeholder="Phone"
+                        style="width: 100%; border: none; background-color: #888; background: rgba(0, 123, 255, 0.06);padding: 15px 20px;">
+                </div>
+                <div
+                    style="color: #888;font-size: 16px; font-weight: 300; color: #888; letter-spacing: 1px; border: none;  width: 100%;  margin-bottom: 20px; padding: 15px 20px; ">
+                    <input type="password" name="password" placeholder="Password"
+                        style="width: 100%; border: none; background-color: #888; background: rgba(0, 123, 255, 0.06);padding: 15px 20px;">
+                </div>
+                <div
+                    style="color: #888;font-size: 16px; font-weight: 300; color: #888; letter-spacing: 1px; border: none;  width: 100%; margin-bottom: 20px; padding: 15px 20px; ">
+                    <textarea name="" id="" placeholder="Your Message Here...."
+                        style="width: 100%; border: none; background-color: #888; background: rgba(0, 123, 255, 0.06);padding: 15px 20px;"></textarea>
+                </div>
+                <div
+                    style="color: #888;font-size: 16px; font-weight: 300; color: #888; letter-spacing: 1px; border: none;  width: 100%;  margin-bottom: 20px; padding: 15px 20px; ">
+                    <button
+                        style="background-color: red; color: #ffffff;  text-transform: uppercase; font-size: small; text-decoration: none; margin: 8px 10px; width: 100%;padding: 15px 20px; border: none;">submit</button>
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12771235.962254565!2d24.51644422304828!3d38.60338741337243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2zVMO8cmtpeWU!5e0!3m2!1sen!2s!4v1770818321923!5m2!1sen!2s"
+                    width="100%" height="100%" style=" border: 2px solid #f7f7f7; padding: 24px !important;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+
+        <div class="row my-5">
+            <div class="col-lg-4">
+                <h4 style="padding-bottom: 20px; padding-top: 10px;text-transform: uppercase;">Communication</h4>
+                <p>for general queries, including property Sales and constructions, please email us at <br>
+                    <a href="" style="color: #ff0000;"> info@example.com</a>
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4 style="padding-bottom: 20px; padding-top: 10px; text-transform: uppercase;">Technical Support</h4>
+                <p>we are ready to help! if you have any queries or issues, contact us for support <br>
+                    <a href="" style="color: #ff0000;"> +12 388 455 6789.</a>
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4 style="padding-bottom: 20px; padding-top: 10px; text-transform: uppercase;">Others</h4>
+                <p>we are ready to help! if you have any queries or issues, contact us for support <br>
+                    <a href="" style="color: #ff0000;"> +12 388 455 6789.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <p style="text-align: center; font-size: large; color: darkgray; font-weight:500 ;">Subscribe to the
+            Handbags
+            Store mailing list
+            to receive updates on <br> new arrivals,
+            special offers and other discount information.
+
+        </p>
+        <div class="row" style="margin-top: 40px;width: 100%;">
+            <div class="col-md-9">
+                <input type="email" name="email" placeholder="Enter Your Email..."
+                    style="border: none; letter-spacing: 1px; color: dimgray; border-radius: 2px; box-shadow: 1px 3px 8px 0 dimgray; width: 50%; line-height: 40px; font-size: 16px; margin-left: 35%; ">
+            </div>
+            <div class="col-md-3">
+                <button
+                    style="border-radius: 4px; background-color: aqua; border: none; padding: 7px 30px; color: #ffffff; letter-spacing: 1px; margin-right: 30%; text-transform: uppercase; font-weight:600px;">Subscribe</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="col-lg-4" style="background-color: black; text-align: center;">
+                <i class="fa-solid fa-truck" style="color: #ff0040; font-size:28px; padding: 30px 20px; "></i>
+                <div style="padding-bottom: 15px;">
+                    <h3 style="color: #ffffff; font-size: large;">FREE SHIPPING</h3>
+                    <p style="color: dimgray;">On all order over $2000</p>
+                </div>
+            </div>
+            <div class="col-lg-4" style=" background-color:dimgray; text-align: center;">
+                <i class="fa-solid fa-bullhorn" style="color: #f00000;  font-size:28px; padding: 30px 20px;"></i>
+                <div style="padding-bottom: 15px;">
+                    <h3 style="color: #ffffff; font-size: large;">FREE RETURN</h3>
+                    <p style="color: rgb(171, 170, 170);">On 1st exchange in 30 days</p>
+                </div>
+            </div>
+            <div class="col-lg-4" style="background-color: black; text-align: center;">
+                <i class="fa-solid fa-gift" style="color: #ff0000;  font-size:28px; padding: 30px 20px;"></i>
+                <div style="padding-bottom: 15px;">
+                    <h3 style="color: #ffffff; font-size: large;">MEMBER DISCOUNT</h3>
+                    <p style="color: dimgray; ">Register & save up to $29%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-lg-3">
+                <h2>Baggage</h2>
+                <label for="" style="font-size: x-small; font-weight: bold; color: gray; letter-spacing: 2px;">ONLINE
+                    SHOPPING</label>
+            </div>
+            <div class="col-lg-3">
+                <ul style="list-style: none; font-size: x-small; font-weight: bold;">
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none; padding-bottom: 20%; ">
+                            <i class="fa-solid fa-angle-right" style="color: #ff0000;"></i>HOME</a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>ABOUT </a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>SHOP</a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>COLLECTIONS</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul style="list-style: none; font-size: x-small; font-weight: bold;">
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;">
+                            <i class="fa-solid fa-angle-right" style="color: #ff0000;"></i>EXTRA PAGE</a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>TERMS & CONDITIONS </a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>SHOP SINGLE</a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none" ;><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>CONTACT US</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul style="list-style: none; font-size: x-small; font-weight: bold;">
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;">
+                            <i class="fa-solid fa-angle-right" style="color: #ff0000;"></i>LOGIN</a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>REGISTER</a>
+                    </li>
+                    <li style="padding-bottom: 30px;">
+                        <a href="" style="color: gray; text-decoration: none;"><i class="fa-solid fa-angle-right"
+                                style="color: #ff0000;"></i>PRIVICY & POLICY</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h4 style="text-align: center; margin-top: 80px; letter-spacing: 1px; text-shadow: 1px 1px rgb(79, 78, 78);">
+            Follow Us</h4>
+
+        <div style="color: black; text-align: center; margin-top: 20px;">
+
+
+            <a href=""><i class="fa-brands fa-facebook-f"></i> <span
+                    style="color: black; text-decoration: none;">Facebook</span></a>
+
+            <a href=""><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i> <span style="color: black;">
+                    Twitter</span> </a>
+            <a href=""><i class="fa-brands fa-google" style="color: #d33c3c;"></i> <span style="color: black;">
+                    Google</span> </a>
+            </ul>
+        </div>
+
+    </div>
+
+    <div style="text-align: center; padding: 20px 20px; font-size: smaller; font-weight: lighter;">
+        <a href="#home"><i class="fa-solid fa-angles-up" style="color: #000000;"></i></a>
+
+    </div>
+
+
+    <div style="background-color: rgb(233, 231, 231);padding: 5px 2px; text-align: center; color: gray;">
+        <p>© 2019 Baggage. All rights reserved | Design by <a href=""
+                style="color: rgb(174, 174, 174); text-decoration: none;">W3layouts.</a></p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
+</html>
