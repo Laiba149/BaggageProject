@@ -17,6 +17,25 @@
 </head>
 
 <body>
+
+<div class="container">
+  <div class="row">
+    @foreach($product as $i)
+    <div class="col-lg-3">
+      <div class="card" style="width: 18rem;">
+  <img src="{{asset('images/'.$i->image)}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{$i->name}}</h5>
+    <p class="card-text">{{$i->price}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    @endforeach
+  </div>
+</div>
+
+
     <div style="background-color: rgb(121, 218, 243); font-size: small;">
         <div class="container d-flex">
             <div style="padding: 20px 30px; margin-left: 50px;">
@@ -40,11 +59,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="index.html"
+                            <a class="nav-link active" aria-current="page" href="{{route('baggage.home')}}"
                                 style="color: #d33c3c;">HOME</a><br>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT US</a>
+                            <a class="nav-link" href="{{route('baggage.about')}}">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -58,10 +77,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="collection.html">COLLECTIONS</a>
+                            <a class="nav-link" href="{{route('baggage.collection')}}">COLLECTIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="{{route('baggage.contact')}}">CONTACT</a>
                         </li>
 
                     </ul>

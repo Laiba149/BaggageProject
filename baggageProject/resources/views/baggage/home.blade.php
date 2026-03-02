@@ -35,15 +35,19 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg a" style="letter-spacing: 2px; font-weight: 600;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+</button>
             <div class="container">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="{{route(home)}}" style="color: #d33c3c;">HOME</a><br>
+                            <a class="nav-link active" aria-current="page" href="{{route('baggage.home')}}" style="color: #d33c3c;">HOME</a><br>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT US</a>
+                            <a class="nav-link" href="{{route('baggage.about')}}">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -57,10 +61,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="collection.html">COLLECTIONS</a>
+                            <a class="nav-link" href="{{route('baggage.collection')}}">COLLECTIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="{{route('baggage.contact')}}">CONTACT</a>
                         </li>
 
                     </ul>
@@ -74,6 +78,8 @@
             </div>
         </nav>
 
+    
+
         <div class="container">
             <div class="row" style="display: flex;">
                 <div class="col-lg-5 "
@@ -86,7 +92,7 @@
                             NoW</b></a>
                 </div>
                 <div class="col-lg-5" style="margin-left: 8px; padding-left: 11px;">
-                    <img src="bag.png" width="130%" alt="">
+                    <img src="bag.png" width="100%" alt="">
                 </div>
             </div>
         </div>
@@ -114,11 +120,11 @@
 
     <div class="container-fluid">
         <div class="row pt-5">
-            <div class="col-md-6">
-                <img src="banner1.jpg" width="135%" alt="">
+            <div class="col-md-8">
+                <img src="banner1.jpg" width="100%" alt="">
             </div>
-            <div class="col-md-4" style="text-align: center; margin-left: 190px;">
-                <h6 style="letter-spacing: 1px; ">Travel Must Haves</h6>
+            <div class="col-md-4" style="text-align: center; margin-left: px;">
+                <h6 style="letter-spacing: 1px; margin-top: 80px; ">Travel Must Haves</h6>
                 <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
                     libero.</p>
                 <a href=""
@@ -127,6 +133,24 @@
             </div>
         </div>
     </div>
+
+
+
+  <div class="container">
+        <h1 class="text-center pt-5">Categories</h1>
+        <div class="row pt-5 text-center">
+            @foreach($category as $i)
+          <div class="col-lg-3">
+            <div class="card">
+                <a href="{{route('baggage.products',$i->name)}}">
+                    <h5>{{$i->name}}</h5>
+                </a>
+            </div>
+          </div>
+            @endforeach
+        </div>
+      </div>
+
 
 
     <div class="container">
@@ -169,7 +193,7 @@
     </div>
 
 
-    <div class="container-fluid my-5">
+    <div class="container md-5">
         <div class="row">
             <div class="col-lg-3" style="text-align: center;">
                 <h3>Trending Now</h3>
@@ -181,23 +205,23 @@
             </div>
 
             <div class="col-8 pl-5">
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <img src="g1.jpg" width="90%" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <img src="g2.jpg" width="90%" alt="">
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <img src="g3.jpg" width="90%" alt="">
                     </div>
-                    <div class="col-lg-4 pt-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 pt-5">
                         <img src="g4.jpg" width="90%" alt="">
                     </div>
-                    <div class="col-lg-4 pt-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 pt-5">
                         <img src="g5.jpg" width="90%" alt="">
                     </div>
-                    <div class="col-lg-4 pt-5">
+                    <div class="col-lg-4 col-md-4 col-sm-6 pt-5">
                         <img src="ab1.jpg" width="100%" alt="" height="190px">
                     </div>
                 </div>

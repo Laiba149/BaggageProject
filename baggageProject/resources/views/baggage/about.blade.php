@@ -40,11 +40,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="{{route(home)}}"
+                            <a class="nav-link active" aria-current="page" href="{{route('baggage.home')}}"
                                 style="color: #d33c3c;">HOME</a><br>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT US</a>
+                            <a class="nav-link" href="{{route('baggage.about')}}">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -58,10 +58,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="collection.html">COLLECTIONS</a>
+                            <a class="nav-link" href="{{route('baggage.collection')}}">COLLECTIONS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="{{route('baggage.contact')}}">CONTACT</a>
                         </li>
 
                     </ul>
@@ -75,6 +75,7 @@
             </div>
         </nav>
     </div>
+
 
 
     <div class="container">
