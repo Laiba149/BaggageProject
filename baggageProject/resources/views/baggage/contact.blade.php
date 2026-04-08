@@ -47,7 +47,7 @@
                             <a class="nav-link" href="{{route('baggage.about')}}">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 DROPDOWN
                             </a>
@@ -289,6 +289,7 @@
             <a href=""><i class="fa-brands fa-google" style="color: #d33c3c;"></i> <span style="color: black;">
                     Google</span> </a>
             </ul>
+            
         </div>
 
     </div>

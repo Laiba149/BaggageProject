@@ -36,11 +36,9 @@
         </div>
         <nav class="navbar navbar-expand-lg a" style="letter-spacing: 2px; font-weight: 600;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent">
-    <span class="navbar-toggler-icon"></span>
-</button>
-            <div class="container">
-
+              data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="container">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
@@ -50,7 +48,7 @@
                             <a class="nav-link" href="{{route('baggage.about')}}">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 DROPDOWN
                             </a>

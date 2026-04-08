@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <div style="background-color: rgb(121, 218, 243); font-size: small;">
         <div class="container d-flex">
             <div style="padding: 20px 30px; margin-left: 50px;">
@@ -25,16 +26,22 @@
                         style="font-weight:1000px; font-size: 30px; font-weight:lighter;">aggage</span>
                 </h1>
                 <label for="" style="font-size: smaller; letter-spacing: 2px; color: grey;"><b>ONLINE STORE</b></label>
-
-            </div>
-            <div style="text-align:right; font-size: 15px; text-decoration:none; margin-left: 60%;margin-top: 40px; ">
+                <div style="text-align:left; font-size: 15px; text-decoration:none; ">
                 <a href=""><i class="fa-regular fa-circle-user" style="color: #ffffff;"></i> <span
                         style="color:black; text-decoration: none;">Sign in</span></a>
                 <a href=""><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i> <span
                         style="color: black">Sign up</span></a>
             </div>
+            </div>
+
         </div>
-        <nav class="navbar navbar-expand-lg a" style="letter-spacing: 2px; font-weight: 600;">
+        <nav class="navbar navbar-expand-lg " style="letter-spacing: 2px; font-weight: 600;">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="container">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -65,152 +72,205 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search here..."
-                            aria-label="Search" />
-                        <button class="btn btn-outline bg-danger" type="submit"><i class="fa-solid fa-magnifying-glass"
-                                style="color: #ffffff;"></i></button>
-                    </form>
+
                 </div>
+                <form class="d-flex" role="search" style="right: 100%;">
+                    <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search" />
+                    <button class="btn btn-outline bg-danger" type="submit"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i></button>
+                </form>
             </div>
-        </nav>
     </div>
 
+    </nav>
 
 
-    <div class="container">
-        <div class="row" style="display: flex;padding-top: 80px;">
-            <div class="col-lg-5" style="margin-left: 8px; padding-left: 101px;">
-                <img src="bag1.png" width="110%" alt="">
-            </div>
-            <div class="col-lg-5 " style="padding: 30px 30px; text-align: left; letter-spacing: 1px; color: #424242;">
-                <h3>About Our Baggage</h3>
-                <p >Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
-                    libero.Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque
-                    maximus libero.</p>
-                    <button style="padding:12px 25px; border:none; background:red; color:white; border-radius:5px; margin-top:25px;">Read More</button>
-            </div>
-            
-        </div>
-    </div>
 
+    <!DOCTYPE html>
+    <html>
 
-    <div class="container">
-        <div class="row" style="margin-top: 100px; text-align: center;">
-            <div class="col-lg-4">
-                <h6 style="text-transform: uppercase;">Fast & Free Delivery</h6>
-                <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
-                    libero</p>
-            </div>
-            <div class="col-lg-4">
-                <h6 style="text-transform: uppercase;">Safe & Secure Payments</h6>
-                <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
-                    libero</p>
-            </div>
-            <div class="col-lg-4">
-                <h6 style="text-transform: uppercase;">100% Money Back Guarantee</h6>
-                <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
-                    libero</p>
-            </div>
-        </div>
-    </div>
+    <head>
+        <title>Baggage Product</title>
+    </head>
 
-    <div class="container-fluid">
-        <div class="row pt-5">
-            <div class="col-md-6">
-                <img src="banner1.jpg" width="135%" alt="">
-            </div>
-            <div class="col-md-4" style="text-align: center; margin-left: 190px;">
-                <h6 style="letter-spacing: 1px; ">Travel Must Haves</h6>
-                <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
-                    libero.</p>
-                <a href=""
-                    style="padding:12px 25px; border:none; background:red; color:white; border-radius:5px; margin-top:25px;"><b>SHOP
-                        NOW</b></a>
-            </div>
-        </div>
-    </div>
+    <body style="margin:0; font-family:Arial; background:#f2f2f2;">
 
+        <div style="display:flex; padding:80px; gap:80px; align-items:center;">
 
-    <div class="container">
-        <h1 style="text-align: center; margin-top: 60px;">Safety Meets Style</h1>
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <img src="c1.jpg" width="100%" alt="">
+            <!-- Left Side Image -->
+            <div style="flex:1;">
+                <img src="{{asset('images/'.$product->image)}}" style="width:100%; max-width:450px;">
             </div>
-            <div class="col-md-4" style="text-align: center; letter-spacing: 1px;">
-                <h6>Need Extra Space ?</h6>
-                <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque maximus
-                    libero.</p>
-                <a href=""
-                    style="background-color: red; text-decoration: none; color: #ffffff; padding: 9px 15px;"><b>SHOP
-                        NOW</b></a>
-            </div>
-            <div class="col-md-4">
-                <img src="c2.jpg" width="100%" alt="">
-            </div>
-        </div>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row " style="margin-top:100px ;">
-            <div class="col-md-6" style="background-image: url(ab1.jpg); padding-top: 250px; min-height: 1px;">
-                <h3 style="color: #ffffff;font-weight: 200; ">50% Off Any <br>Women's Bags</h3>
-                <a href=""
-                    style="background-color: red; text-decoration: none; color: #ffffff; padding: 9px 15px; font-weight: 200; font-size: small;"><b>SHOP
-                        NOW</b></a>
-            </div>
-            <div class="col-md-6"
-                style="background-image: url(ab2.jpg);padding-top:250px ; min-height: 1px; text-align: right;padding-bottom: 50px; padding-left: 15px;">
-                <h4 style="color: #ffffff; font-weight: 200;">30% Off Any <br>Men's Bags</h4>
-                <a href=""
-                    style="background-color: red; text-decoration: none; color: #ffffff; padding: 9px 15px; font-weight: 200; font-size: small;"><b>SHOP
-                        NOW</b></a>
+            <!-- Right Side Content -->
+            <div style="flex:1;">
+
+                <h2 style="margin-top:0; font-size: medium; font-weight: normal;">{{$product->name}}
+                </h2>
+
+                <!-- Price -->
+                <h3 style="font-weight:normal; font-size: medium;">
+                    Rs. {{$product->price}}
+                    <span style="text-decoration:line-through; color:gray;font-size: medium;">599</span>
+                    <span style="font-size:14px; margin-left:10px; font-size: small;">Click For Offer</span>
+                </h3>
+
+                <!-- Email + Button -->
+                <div style="margin:20px 0; display:flex;">
+                    <input type="email" placeholder="Enter your email..."
+                        style="padding:12px; width:250px; border:1px solid #ccc; border-radius:5px 0 0 5px; outline:none;font-size: medium;">
+
+                    <button
+                        style="
+                    padding:12px 25px;border:none;background:#7ec0cf;color:white;border-radius:0 5px 5px 0;cursor:pointer;">
+                        CHECK
+                    </button>
+                </div>
+
+                <!-- Wishlist -->
+                <p>
+                    <a href="#" style="color:#555; text-decoration:underline; font-size:small">
+                        LOGIN TO SAVE IN WISHLIST
+                    </a>
+                </p>
+
+                <!-- Description -->
+                <p style="color:#666; line-height:1.6;">
+                    {{$product->description}}
+                </p>
+
+                <!-- Share -->
+                <h4 style="font-size:small; color: #666;">SHARE PRODUCT :</h4>
+
+                <div style="display:flex; gap:25px; margin-top:10px;">
+
+                    <span style="cursor:pointer;"><i class="fa-brands fa-facebook-f"
+                            style="color: rgb(26, 70, 214);"></i>Facebook</span>
+                    <span style="cursor:pointer;"><i class="fa-brands fa-twitter"
+                            style="color: rgb(116, 192, 252);"></i>Twitter</span>
+                    <span style="cursor:pointer;"><i class="fa-brands fa-google"
+                            style="color: rgb(230, 27, 27);"></i>Google</span>
+
+                </div>
+                <!-- button -->
+                 <form action="{{route('cart.store')}}" method="post">
+                    @csrf
+                    <input type="hidden" name="name" value="{{$product->name}}">
+                    <input type="hidden" name="price" value=" {{$product->price}}">
+                    <input type="hidden" name="image" value="{{$product->image}}">
+                    <input type="hidden" name="quantity" value="1">
+
+                    <button style="padding:12px 25px; border:none; background:#7ec0cf; color:white; border-radius:5px; margin-top:25px;">Add to Cart</button>
+                 </form>
+       
             </div>
 
         </div>
-    </div>
 
 
-    <div class="container-fluid my-5">
-        <div class="row">
-            <div class="col-lg-3" style="text-align: center;">
-                <h3>Trending Now</h3>
-                <p>Lorem ipsum dolor sit,Nulla pellentesque dolor ipsum laoreet eleifend integer,Pellentesque
-                    maximus libero.</p>
-                <a href=""
-                    style="background-color: red; text-decoration: none; color: #ffffff; padding: 9px 15px;"><b>SHOP
-                        NOW</b></a>
-            </div>
 
-            <div class="col-8 pl-5">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img src="g1.jpg" width="90%" alt="">
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="g2.jpg" width="90%" alt="">
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="g3.jpg" width="90%" alt="">
-                    </div>
-                    <div class="col-lg-4 pt-5">
-                        <img src="g4.jpg" width="90%" alt="">
-                    </div>
-                    <div class="col-lg-4 pt-5">
-                        <img src="g5.jpg" width="90%" alt="">
-                    </div>
-                    <div class="col-lg-4 pt-5">
-                        <img src="ab1.jpg" width="100%" alt="" height="190px">
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 style="font-size:20 px;color: #777;line-height: 20px;letter-spacing: 1px;margin-bottom: 0px;">Lorem ipsum dolor sit amet</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl 
+                        ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
+                    <p>Consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit
+                        ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco. labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl
+                        ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="container">
-        <p style="text-align: center; font-size: large; color: darkgray; font-weight:500 ;">Subscribe to the Handbags
+
+
+        <body class="bg-light">
+            <div class="container py-5">
+
+                <div class="row g-4">
+                    <h4 style="font-size: xx-large; font-weight: bolder;">Featured Bags</h4>
+
+                    <!-- Product 1 -->
+                    <div class="col-md-3">
+                        <div
+                            style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; max-width: 100%; margin-bottom: 20px;">
+                            <img src="../b1.jpg" class="img-fluid" alt="Sling Bag">
+                            <h5 class="mt-3">SLING BAG</h5>
+                            <p>
+                                <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$599</span>
+                                <span style="font-weight: bold; color: red; ">$475.00</span>
+                            </p>
+                            <p>
+                                <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-3">
+                        <div
+                            style="border: 1px solid #ddd ; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
+                            <img src="../b2.jpg" class="img-fluid" width="90%" alt="Tote Blue">
+                            <h5 class="mt-3">TOTE (BLUE)</h5>
+                            <p>
+                                <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
+                                <span style="font-weight: bold; color: red; ">$675.00</span>
+                            </p>
+                            <p>
+                                <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-3">
+                        <div
+                            style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
+                            <img src="../b3.jpg" class="img-fluid" width="90%" alt="Messenger Bag">
+                            <h5 class="mt-3">MESSENGER BAG</h5>
+                            <p>
+                                <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
+                                <span style="font-weight: bold; color: red; ">$675.00</span>
+                            </p>
+                            <p>
+                                <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-md-3">
+                        <div
+                            style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
+                            <img src="../b4.jpg" width="90%" class="img-fluid" alt="Shoulder Bag Pink">
+                            <h5 class="mt-3">SHOULDER BAG (PINK)</h5>
+                            <p>
+                                <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
+                                <span style="font-weight: bold; color: red; ">$675.00</span>
+                            </p>
+                            <p>
+                                <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row g-4">
+
+
+
+<div class="container">
+        <p style="text-align: center; font-size: large; color: darkgray; font-weight:500 ; margin-top: 80px;">Subscribe to the
+            Handbags
             Store mailing list
             to receive updates on <br> new arrivals,
             special offers and other discount information.
@@ -346,6 +406,8 @@
                     Google</span> </a>
             </ul>
         </div>
+
+        
 
     </div>
 

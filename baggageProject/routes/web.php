@@ -14,6 +14,8 @@ Route::get('/collection', [BaggageController::class, 'showcollection'])->name('b
 Route::get('/products/{name}', [BaggageController::class, 'showproducts'])->name('baggage.products');
 
 Route::get('/contact', [BaggageController::class, 'showcontact'])->name('baggage.contact');
+Route::get('/dropdown/{id}', [BaggageController::class, 'showdropdown'])->name('baggage.dropdown');
+
 
 
 Route::get('/category/form',[CategoryController::class,'form'])->name('category.form');
@@ -32,5 +34,14 @@ Route::post('/product/update/{id}',[ProductController::class,'update'])->name('P
 Route::get('/product/delete/{id}',[ProductController::class,'delete'])->name('Product.delete');
 
 
+Route::get('/cart', [BaggageController::class, 'showcart'])->name('baggage.cart');
+Route::post('/cart/store', [BaggageController::class, 'addcart'])->name('cart.store');
 
 
+Route::get('/checkout', [BaggageController::class, 'showcheckout'])->name('baggage.checkout');
+
+Route::post('/checkout', [BaggageController::class, 'storecheckout'])->name('checkout.store');
+
+Route::post('/store', [BaggageController::class, 'store'])->name('baggage.store');
+
+Route::get('/detail/show', [BaggageController::class, 'showdetail'])->name('detail.show');

@@ -18,22 +18,7 @@
 
 <body>
 
-<div class="container">
-  <div class="row">
-    @foreach($product as $i)
-    <div class="col-lg-3">
-      <div class="card" style="width: 18rem;">
-  <img src="{{asset('images/'.$i->image)}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{$i->name}}</h5>
-    <p class="card-text">{{$i->price}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    @endforeach
-  </div>
-</div>
+
 
 
     <div style="background-color: rgb(121, 218, 243); font-size: small;">
@@ -66,7 +51,7 @@
                             <a class="nav-link" href="{{route('baggage.about')}}">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 DROPDOWN
                             </a>
@@ -96,196 +81,26 @@
     </div>
 
 
-    <body class="bg-light">
-<div class="container py-5">
-
-  <div class="row g-4">
-
-    <!-- Product 1 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; max-width: 100%; margin-bottom: 20px;">
-        <img src="b1.jpg" class="img-fluid"  alt="Sling Bag">
-        <h5 class="mt-3">SLING BAG</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$599</span>
-          <span style="font-weight: bold; color: red; ">$475.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 2 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd ; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b2.jpg" class="img-fluid" width="90%" alt="Tote Blue">
-        <h5 class="mt-3">TOTE (BLUE)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 3 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b3.jpg" class="img-fluid" width="90%" alt="Messenger Bag">
-        <h5 class="mt-3">MESSENGER BAG</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b4.jpg" width="90%" class="img-fluid" alt="Shoulder Bag Pink">
-        <h5 class="mt-3">SHOULDER BAG (PINK)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
+    <div class="container">
+  <div class="row mt-5" border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; max-width: 100%; margin-bottom: 20px;">
+    @foreach($product as $i)
+    <div class="col-lg-3">
+      <div class="card" style="width: 18rem;border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; max-width: 100%; margin-bottom: 20px;">
+  <img src="{{asset('images/'.$i->image)}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{$i->name}}</h5>
+    <p class="card-text" style="text-decoration: line-through; color: #888; margin-right: 5px;">{{$i->price}}</p>
+    <a href="{{route('baggage.dropdown',$i->id)}}" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="row g-4">
-
-    <!-- Product 5 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b5.jpg" class="img-fluid" width="90%" alt="Sling Bag">
-        <h5 class="mt-3">Satchel (Yellow)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$999</span>
-          <span style="font-weight: bold; color: red; ">$875.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
+</div>
     </div>
-
-    <!-- Product 6 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b6.jpg" class="img-fluid" alt="Tote Blue">
-        <h5 class="mt-3">Shoulder Bag (Orange)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 7 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b7.jpg" class="img-fluid" alt="Messenger Bag">
-        <h5 class="mt-3">Hobo (Blue)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 8 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b8.jpg" class="img-fluid" alt="Shoulder Bag Pink">
-        <h5 class="mt-3">Satchel (Pink)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$599</span>
-          <span style="font-weight: bold; color: red; ">$475.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
+    @endforeach
   </div>
-  <div class="row g-4">
+</div>
 
-    <!-- Product 9 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b3.jpg" class="img-fluid" alt="Sling Bag">
-        <h5 class="mt-3">Sling Bag</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$599</span>
-          <span style="font-weight: bold; color: red; ">$475.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
 
-    <!-- Product 10 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b4.jpg" class="img-fluid" alt="Tote Blue">
-        <h5 class="mt-3">Sling Bag</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
+    
 
-    <!-- Product 11 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b1.jpg" class="img-fluid" alt="Messenger Bag">
-        <h5 class="mt-3">Messenger Bag</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Product 12 -->
-    <div class="col-md-3">
-      <div style="border: 1px solid #ddd; padding: 15px 25px; border-radius: 5px; text-align: center; background: #e1e1e1; margin-bottom: 20px;">
-        <img src="b1.jpg" class="img-fluid" alt="Messenger Bag">
-        <h5 class="mt-3">Shoulder Bag (Pink)</h5>
-        <p>
-          <span style="text-decoration: line-through; color: #888; margin-right: 5px;">$799</span>
-          <span style="font-weight: bold; color: red; ">$675.00</span>
-        </p>
-        <p>
-          <span style=" color: gold;">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
-        </p>
-      </div>
-    </div>
 
 
   <!-- Pagination -->
